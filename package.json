@@ -4,7 +4,7 @@
   "description": "Start template for web work with pug/scss/js",
   "main": "gulpfile.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node scripts.min.js"
   },
   "author": "expcoder",
   "license": "ISC",
