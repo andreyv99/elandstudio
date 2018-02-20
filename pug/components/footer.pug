@@ -1,0 +1,45 @@
+footer.footer
+  .firstLine
+    .container
+      .row.first   
+        .col-12.col-md-6.col-lg-2
+          ul.hover
+            li.title Информация
+            li
+              a.go_to(href='.aboutUs') О нас
+            li
+              a.go_to(href='.ourPrice') Услуги
+            li
+              a.go_to(href='.portfolio') Портфолио  
+            li 
+              a.go_to(href='.footer') Контакты 
+        .col-12.col-md-6.col-lg-2
+          ul
+            li.title Контактная информация
+            li г.Харьков
+            li +38 050-61-65-170
+            li +38 093-16-31-857
+            li studioeland@gmail.com
+        .col-12.col-md-6.col-lg-2
+          ul
+            li.title Режим работы
+            li Пн-сб с 9:00 до 18:00
+            li Вс-выходной
+        .col-12.col-md-6.col-lg-6
+          li.title Оставь заявку и мы перезвоним для уточнения деталей
+          form(action='send.php', method='post')
+            input.input.text(type='text', placeholder='имя', name='first_name')
+            input.input.text(type='text', name='email', required='', placeholder='email или телефон')
+            input.submit(type='submit', name='submit', value='Отправить')
+  .secondLine
+    .container
+      .row.justify-content-around
+        .col-12.col-md-6.col-lg-4.href
+          a.logo(href="#" alt="#")
+            p ElandStudio
+          a.social.inst(href="#" alt="#")
+          a.social.face(href="#" alt="#")
+        .col-12.col-md-6.col-lg-7.text
+          p 2017 “Веб-студия Eland” - веб дизайн, разработка, брендинг.    
+      
+script(src = path.js + "/scripts.min.js")

@@ -1,0 +1,102 @@
+main
+  section.ourPrice 
+    .container
+      h1 Наши цены
+      .row
+        .article.col-12.col-md-6.col-lg-3
+          h4 комплект фирменного стиля 
+          .price
+            p от
+            span 20
+            p $
+          ul.features 
+            li -Разработка логотипа 
+            li -Визитная карточка 
+            li -Фирменный бланк  
+            li -Конверт   
+            li -ручка  
+          a.js-button-campaign(href="#") заказать
+        .article.col-12.col-md-6.col-lg-3 
+          h4 веб-дизайн
+          .price
+            p от
+            span 100
+            p $
+          ul.features
+            li -Проектировка логической структуры веб-страниц   
+            li -Создание дизайн-концепции 
+            li -Создание макетов страниц
+          a.js-button-campaign(href="#") заказать
+        .article.col-12.col-md-6.col-lg-3
+          h4 веб-разаработка
+          .price
+            p от
+            span 150
+            p $
+          ul.features
+            li -Вёрстка страниц и шаблонов
+            li -Програмирование
+            li -Открытие проекта на публичной площадке 
+          a.js-button-campaign(href="#") заказать
+        .article.col-12.col-md-6.col-lg-3
+          h4 интернет продвижение
+          .price
+            p от
+            span 100
+            p $
+          ul.features
+            li -Поисковое продвижение
+            li -Контекстная реклама
+            li -Баннерная реклама
+            li -e-mail маркетинг 
+            li -Интерактивная реклама
+          a.js-button-campaign(href="#") заказать
+  section.feedback
+    .container
+      h3 Не уверены, что наиболее подойдет, именно Вам ?
+      p Раскажи о своем бизнесе и мы разработаем оптимальную стратегию, для достижения наивысших результатов 
+      span Оставь заявку и мы свяжемся для уточнения деталей
+      form(action='send.php', method='post') 
+        input.input.text(type='text', placeholder='имя', name='first_name')
+        input.input.text(type='text', name='email', required='', placeholder='email или телефон')
+        input.submit(type='submit', name='submit', value='Отправить')
+  section.portfolio
+    .container
+      h1 Портфолио
+      .row
+        .col-12
+          .item
+            img(src="assets/img/1.jpg")
+            .shade
+              p.name Страница для архитектурного агенства
+              p.about Веб дизайн
+              a(href="#" alt="#") View case studies
+      .row
+        .col-12.col-md-6
+          .item
+            img(src="assets/img/item4.jpg")
+            .shade
+              p.name Прогоноз погоды
+              p.about User Interface & User Experiance Design
+              a(href="#" alt="#") View case studies
+          .item
+            img(src="assets/img/item5.jpg")
+            .shade 
+              p.name Баннер для кардиологической конференции
+              p.about Графический дизайн. 
+              a(href="#" alt="#") View case studies
+        .col-12.col-md-6
+          .item
+            img(src="assets/img/item3.jpg")
+            .shade
+              p.name Интернет магазин
+              p.about Продвижение в Google Advertising 
+              a(href="#" alt="#") View case studies
+          .item
+            img(src="assets/img/item2.jpg")
+            .shade
+              p.name Создание Landing Page
+              p.about Разработка с нуля, продвижение в сети
+              a(href="#" alt="#") View case studies
+
+            

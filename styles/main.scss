@@ -1,0 +1,11 @@
+// Подключение шрифтов и переменных
+@import "fonts";
+@import "vars";
+@import "sprite";
+// Подключение библиотек
+
+// Подключение компонентов
+@import 'components/reset';
+@import 'components/header';
+@import 'components/main';
+@import 'components/footer';

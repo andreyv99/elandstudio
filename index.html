@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Пути для css, js и изображений-->
+    <!-- блок с meta -->
+    <meta charset="UTF-8"/>
+    <title>ElandStudio</title>
+    <meta name="description" content=""/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta property="og:image" content="assets/img/image.jpg"/>
+    <!-- блок с favicon-->
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-touch-icon-114x114.png"/>
+    <!-- цвет в мобильной версии-->
+    <meta name="theme-color" content="#000"/>
+    <meta name="msapplication-navbutton-color" content="#000"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000"/>
+    <!-- bootstrap4-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"> </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <!--шрифты-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Ubuntu:300|Roboto:300"/>
+    <!--liquid-button-->
+    <!-- подключение сss -->
+    <link rel="stylesheet" href="assets/css/main.min.css"/>
+  </head>
+</html>
+<body>
+  <header>
+    <div class="backgroundContainer">
+      <div class="container">
+        <p class="phone d-none d-lg-block">+38(093) 16 31 857 </p>
+        <nav class="firstNav">
+          <div class="row justify-content-between">
+            <ul class="d-md-none list">
+              <li><a class="go_to" href=".aboutUs">О нас</a></li>
+              <li><a class="go_to" href=".ourPrice">Услуги</a></li>
+              <li><a class="go_to" href=".portfolio">Портфолио  </a></li>
+              <li><a class="go_to" href=".footer">Контакты</a></li>
+            </ul><a class="logo" href="#" alt="#">
+              <p>ElandStudio</p></a>
+            <div class="rightBlock"> 
+              <ul class="d-none d-md-block">
+                <li><a class="go_to" href=".aboutUs">О нас</a></li>
+                <li><a class="go_to" href=".ourPrice">Услуги</a></li>
+                <li><a class="go_to" href=".portfolio">Портфолио  </a></li>
+                <li> <a class="go_to" href=".footer">Контакты </a></li>
+              </ul>
+              <svg class="js-button-campaign liquid-button d-none d-lg-block col" data-text="Оставить заявку" x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" data-force-factor="0.1" data-layer-1-viscosity="0.5" data-layer-2-viscosity="0.4" data-layer-1-mouse-force="400" data-layer-2-mouse-force="500" data-layer-1-force-limit="1" data-layer-2-force-limit="2" data-color1="#4DE7BF" data-color2="#0A3FC7" data-color3="#2A62F4"></svg>
+            </div>
+            <button class="hamburger hamburger--slider d-md-none" type="button"><span class="hamburger-box"> <span class="hamburger-inner"></span></span></button>
+          </div>
+        </nav>
+        <h1 class="title col-12 col-md-8">Дизайн, разработка и продвижение сайтов   </h1>
+        <p class="paragraphly col-12 col-md-6"> У нас профессиональная команда веб-разработчиков по созданию индивидуально разработанного решения на основе уникальных потребностей вашего бизнеса и целей, которые вы хотели бы выполнить.</p>
+        <section class="aboutUs">
+          <div class="row justify-content-between gridContainer">
+            <div class="col-12 col-md-5">
+              <h1 class="headline">О Нас</h1>
+              <p class="secondline">Web-studio “Eland”</p>
+              <p class="thirdline">ElandStudio – это аутсорсинговая компания полного цикла разработки программных продуктов. Мы — команда мотивированных, уверенных, квалифицированных специалистов. Благодаря внедрению инновационных решений в процесс создания программного обеспечения, наша компания является внушительным конкурентом на рынке IT. Сотрудники ElandStudio владеют глубокими знаниями предметных областей, а также експертизой в отрасли технологий.</p>
+            </div>
+            <div class="col-12 col-md-6 unitContainer">
+              <div class="wrapper row" id="skills">
+                <div class="unit" id="li">
+                  <svg id="social-skill" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewbox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve">
+                    <g id="person_a" style="transform-origin: center bottom 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <path fill="#00D9B3" d="M36.7,106c-3.9,0-7.9-0.8-11.6-2.4c-7.1-3.1-12.6-8.8-15.4-16C3.8,72.7,11.2,55.9,26,50                      c14.9-5.9,31.8,1.5,37.6,16.4c3.5,9,2.4,19.1-3.1,27.1c-0.5,0.7-1.4,0.9-2.1,0.4c-0.7-0.5-0.9-1.4-0.4-2.1                      c4.9-7.1,5.9-16.2,2.8-24.3c-5.3-13.4-20.4-19.9-33.8-14.7C13.8,58,7.2,73.2,12.4,86.5c2.5,6.5,7.5,11.6,13.8,14.3                      s13.4,2.9,19.9,0.4c1-0.4,2-0.9,3-1.4c0.7-0.4,1.6-0.1,2,0.6c0.4,0.7,0.1,1.6-0.6,2c-1.1,0.6-2.2,1.1-3.3,1.6                      C43.8,105.3,40.3,106,36.7,106z"></path>
+                      <path fill="#00D9B3" d="M49.9,102.6c-0.1,0-0.2,0-0.3,0c-7.9-1.8-13.2-9.5-12-17.6c0.1-0.6,0.6-1.1,1.2-1.2                      c0.6-0.1,1.2,0.1,1.6,0.6c0.3,0.4,6.9,10.2,18.6,6.8c0.8-0.2,1.6,0.2,1.9,1c0.2,0.8-0.2,1.6-1,1.9c-9.2,2.7-15.8-1.6-19.2-4.9                      c0.7,5.1,4.5,9.4,9.7,10.6c0.8,0.2,1.3,1,1.1,1.8C51.2,102.1,50.6,102.6,49.9,102.6z"></path>
+                      <path fill="#00D9B3" d="M48.6,73.4c-0.7,0-1.4-0.3-1.9-0.8S46,71.4,46,70.7c0-0.7,0.3-1.4,0.8-1.9c1-1,2.8-1,3.8,0                      c0.5,0.5,0.8,1.2,0.8,1.9c0,0.7-0.3,1.4-0.8,1.9S49.4,73.4,48.6,73.4z"></path>
+                    </g>
+                    <g id="person_b" style="transform-origin: center bottom 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <path fill="#00D9B3" d="M101.3,106c-3.6,0-7.2-0.7-10.6-2c-1.1-0.5-2.3-1-3.3-1.6c-0.7-0.4-1-1.3-0.6-2c0.4-0.7,1.3-1,2-0.6                      c1,0.5,2,1,3,1.4c6.5,2.5,13.5,2.4,19.9-0.4c6.4-2.8,11.3-7.9,13.8-14.3c5.3-13.4-1.3-28.5-14.7-33.7                      c-13.4-5.3-28.5,1.3-33.8,14.7c-3.2,8.1-2.1,17.1,2.8,24.3c0.5,0.7,0.3,1.6-0.4,2.1c-0.7,0.5-1.6,0.3-2.1-0.4                      c-5.5-8-6.6-18.1-3.1-27.1C80.2,51.5,97.1,44.1,112,50c14.9,5.9,22.2,22.7,16.4,37.6c-2.8,7.2-8.3,12.9-15.4,16                      C109.2,105.2,105.3,106,101.3,106z"></path>
+                      <path fill="#00D9B3" d="M88.1,102.6c-0.7,0-1.3-0.5-1.5-1.2c-0.2-0.8,0.3-1.6,1.1-1.8c5.2-1.2,9-5.5,9.7-10.6                      c-3.4,3.3-10,7.6-19.2,4.9c-0.8-0.2-1.2-1.1-1-1.9c0.2-0.8,1.1-1.2,1.9-1c11.7,3.5,18.3-6.3,18.6-6.8c0.3-0.5,1-0.8,1.6-0.6                      c0.6,0.1,1.1,0.6,1.2,1.2c1.2,8.1-4.1,15.8-12,17.6C88.3,102.6,88.2,102.6,88.1,102.6z"></path>
+                      <path fill="#00D9B3" d="M89.4,73.4c-0.7,0-1.4-0.3-1.9-0.8c-0.5-0.5-0.8-1.2-0.8-1.9c0-0.7,0.3-1.4,0.8-1.9c1-1,2.8-1,3.8,0                      c0.5,0.5,0.8,1.2,0.8,1.9c0,0.7-0.3,1.4-0.8,1.9S90.1,73.4,89.4,73.4z"></path>
+                    </g>
+                  </svg>
+                  <div class="text">
+                    <p>7</p><span>Опытных специалистов</span>
+                  </div>
+                </div>
+                <div class="unit" id="li">
+                  <svg id="event-skill" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewbox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve">
+                    <path fill="#00D9B3" d="M34.1,108c-0.5,0-0.9-0.2-1.2-0.6c-0.5-0.7-0.3-1.6,0.3-2.1c0.4-0.3,41.7-31,41.7-77.1                    c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5c0,47.7-42.5,79.2-42.9,79.5C34.8,107.9,34.5,108,34.1,108z"></path>
+                    <path fill="#00D9B3" d="M125.9,108c-0.3,0-0.6-0.1-0.9-0.3c-0.4-0.3-42.9-31.8-42.9-79.5c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5                    c0,46.2,41.3,76.8,41.7,77.1c0.7,0.5,0.8,1.4,0.3,2.1C126.8,107.8,126.3,108,125.9,108z"></path>
+                    <g id="flag" style="transform-origin: 80px 0px 0px; transform: matrix3d(0, 0, -1, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1);">
+                      <path fill="#00D9B3" d="M92.8,14.6h-8.3c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h5.9l-1.6-3.2c-0.2-0.4-0.2-0.9,0-1.3l1.6-3.2H80                      c-0.8,0-1.5-0.7-1.5-1.5s0.7-1.5,1.5-1.5h12.8c0.5,0,1,0.3,1.3,0.7c0.3,0.4,0.3,1,0.1,1.4l-2.3,4.7l2.3,4.7c0.2,0.5,0.2,1-0.1,1.4                      C93.8,14.3,93.3,14.6,92.8,14.6z"></path>
+                      <g opacity="0">
+                        <path fill="#00D9B3" d="M80,23.2c-0.8,0-1.5-0.7-1.5-1.5V2.4c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v19.3                        C81.5,22.5,80.8,23.2,80,23.2z"></path>
+                      </g>
+                    </g>
+                    <g id="stick" style="transform: matrix(1, 0, 0, 1, 0, 0.248642857142215);">
+                      <path fill="#00D9B3" d="M80,23.2c-0.8,0-1.5-0.7-1.5-1.5V2.4c0-0.8,0.7-1.5,1.5-1.5s1.5,0.7,1.5,1.5v19.3                      C81.5,22.5,80.8,23.2,80,23.2z" style="fill-opacity: 0.992895918367365;"></path>
+                    </g>
+                    <polygon fill="#00D9B3" points="71,106.5 80.1,84.4 89,106.5 		"></polygon>
+                    <path fill="#00D9B3" d="M89.1,108C89.1,108,89.1,108,89.1,108H71c-0.5,0-1-0.2-1.2-0.7c-0.3-0.4-0.3-0.9-0.1-1.4l9.1-22.1                    c0.2-0.6,0.8-0.9,1.4-0.9c0,0,0,0,0,0c0.6,0,1.1,0.4,1.4,0.9l8.8,21.9c0.1,0.2,0.2,0.5,0.2,0.8C90.6,107.3,89.9,108,89.1,108z                    M73.2,105h13.6l-6.7-16.7L73.2,105z"></path>
+                    <rect x="78.3" y="27.8" fill="#FFFFFF" width="4" height="31.3"></rect>
+                  </svg>
+                  <div class="text">
+                    <p>34</p><span>Реализованых Проектов</span>
+                  </div>
+                </div>
+                <div class="unit" id="li">
+                  <svg id="html5-skill" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewbox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve">
+                    <g id="star" style="transform-origin: 56.5px 44.5px 0px; transform: translate3d(0px, -5.63347031249841px, 0px);">
+                      <path fill="#00D9B3" d="M60.5,37.8c-0.6,0-1.2-0.4-1.4-1l-3.6-11l-3.6,11c-0.3,0.8-1.1,1.2-1.9,1c-0.8-0.3-1.2-1.1-1-1.9l5-15.4                      c0.2-0.6,0.8-1,1.4-1s1.2,0.4,1.4,1l5,15.4c0.3,0.8-0.2,1.6-1,1.9C60.8,37.8,60.7,37.8,60.5,37.8z"></path>
+                      <path fill="#00D9B3" d="M80.1,70c-0.5,0-0.9-0.2-1.2-0.6c-0.5-0.7-0.3-1.6,0.3-2.1l16.7-12.1H74.2c-0.8,0-1.5-0.7-1.5-1.5                      s0.7-1.5,1.5-1.5h26.3c0.7,0,1.2,0.4,1.4,1s0,1.3-0.5,1.7L80.9,69.7C80.7,69.9,80.4,70,80.1,70z"></path>
+                      <path fill="#00D9B3" d="M27.7,108c-0.3,0-0.6-0.1-0.9-0.3c-0.5-0.4-0.7-1.1-0.5-1.7l6-18.4c0.3-0.8,1.1-1.2,1.9-1                      c0.8,0.3,1.2,1.1,1,1.9l-4.6,14L40.9,95c0.7-0.5,1.6-0.3,2.1,0.3c0.5,0.7,0.3,1.6-0.3,2.1l-14.1,10.2C28.3,107.9,28,108,27.7,108z                      "></path>
+                      <path fill="#00D9B3" d="M83.3,108c-0.3,0-0.6-0.1-0.9-0.3L68.3,97.5C67.7,97,67.5,96,68,95.4c0.5-0.7,1.4-0.8,2.1-0.3l10.4,7.5                      l-4.6-14c-0.3-0.8,0.2-1.6,1-1.9c0.8-0.3,1.6,0.2,1.9,1l6,18.4c0.2,0.6,0,1.3-0.5,1.7C83.9,107.9,83.6,108,83.3,108z"></path>
+                      <path fill="#00D9B3" d="M33.8,72.1c-0.3,0-0.6-0.1-0.9-0.3l-23.3-17c-0.5-0.4-0.7-1.1-0.5-1.7c0.2-0.6,0.8-1,1.4-1h26.3                      c0.8,0,1.5,0.7,1.5,1.5s-0.7,1.5-1.5,1.5H15.1l19.6,14.2c0.7,0.5,0.8,1.4,0.3,2.1C34.8,71.8,34.3,72.1,33.8,72.1z"></path>
+                      <path fill="#00D9B3" d="M55.5,95.2c-8.1,0-15.7-4.8-19-12.3c-0.3-0.8,0-1.6,0.8-2c0.8-0.3,1.6,0,2,0.8c3,6.7,9.9,10.9,17.3,10.5                      c9.8-0.6,17.3-9,16.8-18.8c-0.6-9.8-9-17.3-18.8-16.8c-4,0.2-7.7,1.8-10.8,4.4c0,0,0,0,0,0c-0.3,0.3-0.7,0.4-1.2,0.3                      c-0.6-0.1-1-0.5-1.2-1.1c-0.1-0.3-0.1-0.6,0-0.9c0.1-0.3,5.6-17.1,5.6-17.1c0.2-0.6,0.8-1,1.4-1h15c0.8,0,1.5,0.7,1.5,1.5                      s-0.7,1.5-1.5,1.5H49.4l-3.8,11.8c2.7-1.5,5.6-2.3,8.8-2.5c11.5-0.6,21.3,8.1,21.9,19.6c0.3,5.5-1.5,10.9-5.2,15                      c-3.7,4.1-8.8,6.6-14.3,6.9C56.3,95.2,55.9,95.2,55.5,95.2z"></path>
+                    </g>
+                  </svg>
+                  <div class="text">
+                    <p>5</p><span>Лет опыта</span>
+                  </div>
+                </div>
+                <div class="unit" id="li">
+                  <svg id="brand-skill" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px" height="108px" viewbox="0 0 160 108" enable-background="new 0 0 160 108" xml:space="preserve">
+                    <g id="heart">
+                      <path fill="#FFFFFF" d="M23.6,101.8c-20-11.5-19-24-19-24c0-7.3,5.9-13.2,13.2-13.2c4,0,7.5,1.8,10,4.5c2.4-2.8,6-4.5,10-4.5                      c7.3,0,13.2,5.9,13.2,13.2c0,0,1,12.6-19,24h40.2"></path>
+                      <path id="heartpath" fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="0, 1000" d="                      M23.6,101.8c-20-11.5-19-24-19-24c0-7.3,5.9-13.2,13.2-13.2c4,0,7.5,1.8,10,4.5c2.4-2.8,6-4.5,10-4.5c7.3,0,13.2,5.9,13.2,13.2                      c0,0,1,12.6-19,24h40.2" style="stroke-dasharray: 0px, 168.126174926758px;"></path>
+                    </g>
+                    <g id="pen" style="transform-origin: 23px 100px 0px; transform: matrix(1, 0, 0, 1, 0, 0);">
+                      <polygon fill="#FFFFFF" points="41.2,87.1 23.8,101.8 6.4,87.1 6.4,28.9 17.4,24.5 29,24.5 41.2,28.9 	"></polygon>
+                      <polygon fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="                      41.2,87.1 23.8,101.8 6.4,87.1 6.4,28.9 17.4,24.5 29,24.5 41.2,28.9 	"></polygon>
+                      <polyline fill="#FFFFFF" points="6.4,87.1 16.8,81.5 30.3,81.5 41.2,87.1 	"></polyline>
+                      <polyline fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="                      6.4,87.1 16.8,81.5 30.3,81.5 41.2,87.1 	"></polyline>
+                      <line fill="#FFFFFF" x1="17.4" y1="24.5" x2="17.4" y2="81.5"></line>
+                      <line fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="17.4" y1="24.5" x2="17.4" y2="81.5"></line>
+                      <line fill="#FFFFFF" x1="29" y1="24.5" x2="29" y2="81.5"></line>
+                      <line fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="29" y1="24.5" x2="29" y2="81.5"></line>
+                      <path fill="#FFFFFF" d="M30.3,96.3c-1.5-1.8-3.9-3-6.4-3c-2.6,0-4.9,1.2-6.4,3l6.4,5.4L30.3,96.3z"></path>
+                      <path fill="none" stroke="#00D9B3" stroke-width="2.979" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="                      M30.3,96.3c-1.5-1.8-3.9-3-6.4-3c-2.6,0-4.9,1.2-6.4,3l6.4,5.4L30.3,96.3z"></path>
+                    </g>
+                  </svg>
+                  <div class="text">
+                    <p>3/4</p><span>Клиентов - возвращаются</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </header>
+  <div class="overlay js-overlay-campaign">
+    <div class="popup js-popup-campaign">
+      <p>обсудить проект</p><span>Крутые проекты начинаются с заполнения этой формы</span>
+      <form action="send.php" method="post"> 
+        <input class="input text" type="text" placeholder="имя" name="first_name"/>
+        <input class="input text" type="text" name="email" required="" placeholder="email или телефон"/>
+        <input class="submit" type="submit" name="submit" value="Отправить"/>
+      </form>
+      <div class="close-popup js-close-campaign"></div>
+    </div>
+  </div>
+  <main>
+    <section class="ourPrice"> 
+      <div class="container">
+        <h1>Наши цены</h1>
+        <div class="row">
+          <div class="article col-12 col-md-6 col-lg-3">
+            <h4>комплект фирменного стиля </h4>
+            <div class="price">
+              <p>от</p><span>20</span>
+              <p>$</p>
+            </div>
+            <ul class="features"> 
+              <li>-Разработка логотипа </li>
+              <li>-Визитная карточка </li>
+              <li>-Фирменный бланк  </li>
+              <li>-Конверт   </li>
+              <li>-ручка  </li>
+            </ul><a class="js-button-campaign" href="#">заказать</a>
+          </div>
+          <div class="article col-12 col-md-6 col-lg-3"> 
+            <h4>веб-дизайн</h4>
+            <div class="price">
+              <p>от</p><span>100</span>
+              <p>$</p>
+            </div>
+            <ul class="features">
+              <li>-Проектировка логической структуры веб-страниц   </li>
+              <li>-Создание дизайн-концепции </li>
+              <li>-Создание макетов страниц</li>
+            </ul><a class="js-button-campaign" href="#">заказать</a>
+          </div>
+          <div class="article col-12 col-md-6 col-lg-3">
+            <h4>веб-разаработка</h4>
+            <div class="price">
+              <p>от</p><span>150</span>
+              <p>$</p>
+            </div>
+            <ul class="features">
+              <li>-Вёрстка страниц и шаблонов</li>
+              <li>-Програмирование</li>
+              <li>-Открытие проекта на публичной площадке </li>
+            </ul><a class="js-button-campaign" href="#">заказать</a>
+          </div>
+          <div class="article col-12 col-md-6 col-lg-3">
+            <h4>интернет продвижение</h4>
+            <div class="price">
+              <p>от</p><span>100</span>
+              <p>$</p>
+            </div>
+            <ul class="features">
+              <li>-Поисковое продвижение</li>
+              <li>-Контекстная реклама</li>
+              <li>-Баннерная реклама</li>
+              <li>-e-mail маркетинг </li>
+              <li>-Интерактивная реклама</li>
+            </ul><a class="js-button-campaign" href="#">заказать</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="feedback">
+      <div class="container">
+        <h3>Не уверены, что наиболее подойдет, именно Вам ?</h3>
+        <p>Раскажи о своем бизнесе и мы разработаем оптимальную стратегию, для достижения наивысших результатов </p><span>Оставь заявку и мы свяжемся для уточнения деталей</span>
+        <form action="send.php" method="post"> 
+          <input class="input text" type="text" placeholder="имя" name="first_name"/>
+          <input class="input text" type="text" name="email" required="" placeholder="email или телефон"/>
+          <input class="submit" type="submit" name="submit" value="Отправить"/>
+        </form>
+      </div>
+    </section>
+    <section class="portfolio">
+      <div class="container">
+        <h1>Портфолио</h1>
+        <div class="row">
+          <div class="col-12">
+            <div class="item"><img src="assets/img/1.jpg"/>
+              <div class="shade">
+                <p class="name">Страница для архитектурного агенства</p>
+                <p class="about">Веб дизайн</p><a href="#" alt="#">View case studies</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="item"><img src="assets/img/item4.jpg"/>
+              <div class="shade">
+                <p class="name">Прогоноз погоды</p>
+                <p class="about">User Interface & User Experiance Design</p><a href="#" alt="#">View case studies</a>
+              </div>
+            </div>
+            <div class="item"><img src="assets/img/item5.jpg"/>
+              <div class="shade"> 
+                <p class="name">Баннер для кардиологической конференции</p>
+                <p class="about">Графический дизайн. </p><a href="#" alt="#">View case studies</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="item"><img src="assets/img/item3.jpg"/>
+              <div class="shade">
+                <p class="name">Интернет магазин</p>
+                <p class="about">Продвижение в Google Advertising </p><a href="#" alt="#">View case studies</a>
+              </div>
+            </div>
+            <div class="item"><img src="assets/img/item2.jpg"/>
+              <div class="shade">
+                <p class="name">Создание Landing Page</p>
+                <p class="about">Разработка с нуля, продвижение в сети</p><a href="#" alt="#">View case studies</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="firstLine">
+      <div class="container">
+        <div class="row first">  
+          <div class="col-12 col-md-6 col-lg-2">
+            <ul class="hover">
+              <li class="title">Информация</li>
+              <li><a class="go_to" href=".aboutUs">О нас</a></li>
+              <li><a class="go_to" href=".ourPrice">Услуги</a></li>
+              <li><a class="go_to" href=".portfolio">Портфолио  </a></li>
+              <li> <a class="go_to" href=".footer">Контакты </a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <ul>
+              <li class="title">Контактная информация</li>
+              <li>г.Харьков</li>
+              <li>+38 050-61-65-170</li>
+              <li>+38 093-16-31-857</li>
+              <li>studioeland@gmail.com</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <ul>
+              <li class="title">Режим работы</li>
+              <li>Пн-сб с 9:00 до 18:00</li>
+              <li>Вс-выходной</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6">
+            <li class="title">Оставь заявку и мы перезвоним для уточнения деталей</li>
+            <form action="send.php" method="post">
+              <input class="input text" type="text" placeholder="имя" name="first_name"/>
+              <input class="input text" type="text" name="email" required="" placeholder="email или телефон"/>
+              <input class="submit" type="submit" name="submit" value="Отправить"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="secondLine">
+      <div class="container">
+        <div class="row justify-content-around">
+          <div class="col-12 col-md-6 col-lg-4 href"><a class="logo" href="#" alt="#">
+              <p>ElandStudio</p></a><a class="social inst" href="#" alt="#"></a><a class="social face" href="#" alt="#"></a></div>
+          <div class="col-12 col-md-6 col-lg-7 text">
+            <p>2017 “Веб-студия Eland” - веб дизайн, разработка, брендинг.    </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/scripts.min.js"></script>
+</body>

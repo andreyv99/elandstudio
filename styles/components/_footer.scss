@@ -1,0 +1,122 @@
+footer{
+  .firstLine{
+    background-color:#150773;
+    .title{
+    padding-top: 2rem;
+    color:  #fff;
+    opacity: 0.3;
+    }
+
+    li, a{
+      font-family: $secondary-font;
+      color:  #ffffff;
+      font-size: 1.2rem;
+      font-weight: 100;
+      line-height: 3.6rem;
+      list-style:none;
+      transition: all 200ms linear;
+      text-align: center;
+      // &:hover{
+      //   color:   #2cd4d9;
+      //   cursor: pointer;
+      // }
+    }
+    .hover li:hover{
+      color: #2cd4d9;
+      cursor: pointer;
+    }
+    form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: .5rem;
+      .input{
+        margin-bottom: 1.5rem;
+        padding-left: .5rem;
+        width: 50%;
+        // opacity: .7;
+        background-color: #150773;
+        color: #2cd5d9;
+      }
+      .submit{
+        border-width: 1px;
+        width: 25%;
+        color: #ffffff;
+        background-color: #150773;
+        &:hover{
+          border-color: #2cd5d9;
+          color: #2cd5d9;
+        }
+      }
+    }
+  }
+  .secondLine{
+    background-color: #0c022f;
+    padding: 2.5rem 0;
+    .href{
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .text{
+      color: #fff;
+      opacity: 0.3;
+      font-size: 1.8rem;
+      font-family: $secondary-font;
+      font-weight: 300;
+      line-height: 1.8rem;
+      margin: auto;
+      text-align: center;
+    }
+    .social{
+      background-repeat: no-repeat;
+      width:23px;
+      height:23px;
+      background-repeat: no-repeat;
+      display: block;
+      background-size: cover;
+      margin: 0 4px;
+    }
+    .inst{
+      background-image: url(../img/inst.png);
+    }
+    .face{
+      background-image: url(../img/face.png);
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  footer .firstLine li{
+    text-align: left;
+  }
+  .secondline .href{
+    justify-content: flex-start !important;
+    margin-bottom: 0;
+  }
+  .text{
+    text-align: left !important;
+  }
+  footer .firstLine form{
+    align-items: flex-start;
+  }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+footer .firstLine{
+  background-image: url(../img/footer.png);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size:contain;
+  padding: 7rem 0 20rem;
+}
+ }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }

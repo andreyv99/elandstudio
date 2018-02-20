@@ -1,0 +1,304 @@
+.aboutUs{
+  padding-bottom: 25rem;
+  .gridContainer{
+    background-color:  #ffffff;
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    padding: 5rem 4rem;
+    margin: 0;
+  }
+  .headline{
+    font-family: $main-font;
+    color:  #000000;
+    font-size: 4.8rem;
+    font-weight: 300;
+    line-height: 4.9rem;
+
+  }
+  .secondline{
+    font-family: $main-font;
+    color:  #797878;
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 3rem;
+  }
+  .thirdline{
+    font-family: $main-font;
+    color:  #393939;
+    font-size: 1.4rem;
+    font-weight: 100;
+    line-height: 2.4rem;
+  }
+  .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+  .unitContainer{
+    margin: auto 0;
+  }
+  .unit{
+    display: flex;
+    justify-content: center;
+    width: 50% ;
+    padding: 1.5rem .5rem;
+    margin: 1rem 0;
+    transition: .2s;
+    &:hover{
+    box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+}
+.unit .text {
+  display: flex;
+  flex-direction:column;
+  justify-content:space-evenly;
+  p{
+    font-family: $main-font;
+    color:  #121212;
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    text-align: center;
+
+  }
+  span{
+    font-family:  $secondary-font;
+    color:  #8e9296;
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+}
+.ourPrice{
+  background-color:  #150773;
+  padding: 6.6rem 0;
+  h1{
+    font-family: $main-font;
+    color:  #ffffff;
+    text-align: center;
+    padding-bottom: 6rem;
+  }
+  .article{
+  height: 48.1rem;
+  padding: 2rem;
+  transition: .4s;
+  border-right:1px solid #5333ed;
+  &:last-child{
+    border-right:0;
+  }
+  &:hover{
+  background-color:  #5333ed;
+  }
+  }
+  h4{
+    font-family: $main-font;
+    color:  #ffffff;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: center;
+    height: 18%;
+    // padding-bottom: 3.3rem
+  }
+  .price{
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+    height: 18%;
+    padding-bottom: 2rem;
+    // padding-bottom: 3rem;
+    p{
+      font-family: $secondary-font;
+      color:  #ffffff;
+      font-size: 1.4rem;
+      font-weight: 100;
+      line-height: 2.4rem;
+      text-transform: uppercase;
+    }
+    span{
+      font-family: $secondary-font;
+      color:  #2bd5d9;
+      font-size: 7.2rem;
+      line-height: 7.2rem;
+      font-weight: 600;
+
+    }
+  }
+  .features{
+    height: 38%;
+    // padding-bottom: 3rem;
+    li{
+    font-family: $secondary-font;
+    color:  #ffffff;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: center;
+    list-style-type: none;
+  }}
+  a{
+    font-family: $main-font;
+    color:  #ffffff;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color:  #ffffff;
+    border-style: solid;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    transition: .2s;
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 2rem;
+    left: calc(50% - 7.5rem);
+    width: 15rem;
+    // height:26%;
+    &:hover{
+      color:  #2cd5d9;
+      border-color:  #2cd5d9;
+    }
+  }
+}
+.feedback{
+  padding: 10rem 0;
+  background-image:url(../img/feedback.jpg);
+  background-position:bottom;
+  background-repeat: no-repeat;
+  h3{
+    font-family: $main-font;
+    color:  #414042;
+    font-size: 3.6rem;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 3rem;
+  }
+  p{
+    font-family: $secondary-font;
+    color:  #414042;
+    font-size: 2.1rem;
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 2rem;
+  }
+  span{
+    font-family: $main-font;
+    color:  #414042;
+    font-size: 1.8rem;
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    padding-bottom: 2.5rem;
+  }
+}
+form{
+  display: flex;
+  justify-content: space-around;
+  font-family: $main-font;
+  color:  #545353;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  .input{
+    border-bottom-width: 1px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-color:  #8a8a8a;
+    border-style: solid;
+    line-height: 3.5rem;
+    text-transform: none;
+
+    background-color:  #e2ebf8;
+    &::placeholder{
+      text-transform: uppercase;
+    }
+  }
+  .text{
+    width: 35%;
+    margin-bottom: 1.5rem;
+  }
+  .submit{
+    width: 15rem;
+    background-color: #e1eaf8;
+    border: 2px solid #8a8a8a;
+    transition: .2s;
+    &:hover{
+      box-shadow: 0px 0px 33px -8px rgba(0,0,0,0.75);
+      cursor: pointer;
+    }
+  }
+}
+.portfolio{
+  background-color:  #e1eaf8;
+  padding: 0 0 25rem;
+  background-image: url(../img/portfolio.svg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+
+  h1{
+    padding-bottom: 6rem;
+    font-family: $main-font;
+    color:  #000000;
+    font-weight: 600;
+    text-align: center;
+  }
+  .item{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 2rem;
+    &:hover .shade{
+      bottom:0;
+    }
+  }
+  .shade{
+    background: rgba(28, 137, 241, 0.75);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    padding: 4rem;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    .name{
+      font-family:  $main-font;
+      color:  #ffffff;
+      font-size: 3rem;
+      font-weight: 300;
+      line-height: 3.4rem;
+    }
+    .about{
+      font-family: $main-font;
+
+      color:  #ffffff;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 5.5rem;
+    }
+}}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+form .text{
+  width: 25%;
+  margin-bottom: 0;
+}
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
